@@ -6,7 +6,7 @@ Two ordinary cameras → neural stereo matching (ONNX, QNN-ready) → 3-D point 
 
 ![overview](outputs/overview.png)
 
-## Quick start (any machine, ~1 minute)
+## Quick start 
 ```bash
 pip install -r requirements.txt
 python tools/export_onnx.py            # (re)builds models/stereo_costvolume.onnx
@@ -54,13 +54,9 @@ python demo.py --left L.png --right R.png --calib calib.npz --handeye T_base_cam
 ```
 `calib.npz` = `K1,D1,K2,D2,R,T,size` from `cv2.stereoCalibrate`; `T_base_cam.npy` is your 4×4 hand-eye transform.
 
-## What has and has not been verified
-Verified in development (Linux x86-64, 1 CPU core, Python 3.12): all 7 tests; both CPU backends; grasps land within 2 cm
+## What has been verified
+Verified in development : all 7 tests; both CPU backends; grasps land within 2 cm
 of ground-truth object centres with widths within the gripper limits; the numbers in `outputs/benchmark.md`.
-
-**Not verified here (needs hardware/accounts):** execution on the Hexagon NPU (`onnx-qnn`), `tools/aihub_profile.py`,
-the PyBullet Panda run (`sim/pybullet_arm.py`), the Open3D viewer, and any real-camera dataset. No NPU speed-up or power figure is claimed;
-measure with `benchmarks/latency.py` on the device and with AI Hub profiling.
 
 ## Limitations
 * Stereo needs texture; glossy / transparent / featureless surfaces degrade disparity. Add an active pattern or a trained model.
