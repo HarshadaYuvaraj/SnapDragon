@@ -1,0 +1,4 @@
+pytest
+qai-hub            # Qualcomm AI Hub cloud compile/profile on real Snapdragon devices
+open3d             # interactive viewer (no official Windows-ARM64 wheel)
+pybullet           # Franka Panda grasp simulation (no official Windows-ARM64 wheel)

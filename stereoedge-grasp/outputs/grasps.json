@@ -1,0 +1,234 @@
+{
+  "backend": "onnx-cpu",
+  "timings_ms": {
+    "stereo_matching": 22.373726999944665,
+    "point_cloud": 10.529148000046007,
+    "plane_fit": 12.654424999936964,
+    "segmentation": 2.110027000071568,
+    "normals": 12.729722999893056,
+    "grasp_synthesis": 15.411627000048611,
+    "total": 75.80867699994087
+  },
+  "best": {
+    "position_m": [
+      0.6481,
+      0.0791,
+      0.0211
+    ],
+    "approach_vector": [
+      0.0001,
+      0.0,
+      -1.0
+    ],
+    "closing_axis": [
+      0.3767,
+      -0.9263,
+      0.0
+    ],
+    "rotation_matrix": [
+      [
+        0.3767,
+        -0.92634,
+        8e-05
+      ],
+      [
+        -0.92634,
+        -0.3767,
+        0.0
+      ],
+      [
+        3e-05,
+        -7e-05,
+        -1.0
+      ]
+    ],
+    "gripper_width_m": 0.0419,
+    "score": 0.9643,
+    "object_id": 0,
+    "score_terms": {
+      "antipodal": 0.966,
+      "centering": 0.976,
+      "width_fit": 0.898,
+      "clearance": 1.0,
+      "normal_agree": 0.971
+    }
+  },
+  "all": [
+    {
+      "position_m": [
+        0.6481,
+        0.0791,
+        0.0211
+      ],
+      "approach_vector": [
+        0.0001,
+        0.0,
+        -1.0
+      ],
+      "closing_axis": [
+        0.3767,
+        -0.9263,
+        0.0
+      ],
+      "rotation_matrix": [
+        [
+          0.3767,
+          -0.92634,
+          8e-05
+        ],
+        [
+          -0.92634,
+          -0.3767,
+          0.0
+        ],
+        [
+          3e-05,
+          -7e-05,
+          -1.0
+        ]
+      ],
+      "gripper_width_m": 0.0419,
+      "score": 0.9643,
+      "object_id": 0,
+      "score_terms": {
+        "antipodal": 0.966,
+        "centering": 0.976,
+        "width_fit": 0.898,
+        "clearance": 1.0,
+        "normal_agree": 0.971
+      }
+    },
+    {
+      "position_m": [
+        0.4457,
+        -0.1044,
+        0.0289
+      ],
+      "approach_vector": [
+        0.0001,
+        0.0,
+        -1.0
+      ],
+      "closing_axis": [
+        0.4895,
+        -0.872,
+        0.0
+      ],
+      "rotation_matrix": [
+        [
+          0.48948,
+          -0.87201,
+          8e-05
+        ],
+        [
+          -0.87201,
+          -0.48948,
+          0.0
+        ],
+        [
+          4e-05,
+          -7e-05,
+          -1.0
+        ]
+      ],
+      "gripper_width_m": 0.047,
+      "score": 0.9599,
+      "object_id": 3,
+      "score_terms": {
+        "antipodal": 0.998,
+        "centering": 0.88,
+        "width_fit": 0.974,
+        "clearance": 1.0,
+        "normal_agree": 0.964
+      }
+    },
+    {
+      "position_m": [
+        0.5595,
+        -0.0678,
+        0.0415
+      ],
+      "approach_vector": [
+        0.0001,
+        0.0,
+        -1.0
+      ],
+      "closing_axis": [
+        0.1106,
+        0.9939,
+        0.0
+      ],
+      "rotation_matrix": [
+        [
+          0.11059,
+          0.99387,
+          8e-05
+        ],
+        [
+          0.99387,
+          -0.11059,
+          0.0
+        ],
+        [
+          1e-05,
+          8e-05,
+          -1.0
+        ]
+      ],
+      "gripper_width_m": 0.0454,
+      "score": 0.9228,
+      "object_id": 2,
+      "score_terms": {
+        "antipodal": 0.896,
+        "centering": 0.962,
+        "width_fit": 0.984,
+        "clearance": 1.0,
+        "normal_agree": 0.772
+      }
+    },
+    {
+      "position_m": [
+        0.3841,
+        0.0481,
+        0.0267
+      ],
+      "approach_vector": [
+        0.0001,
+        0.0,
+        -1.0
+      ],
+      "closing_axis": [
+        0.8841,
+        -0.4672,
+        0.0001
+      ],
+      "rotation_matrix": [
+        [
+          0.88414,
+          -0.46721,
+          8e-05
+        ],
+        [
+          -0.46721,
+          -0.88414,
+          0.0
+        ],
+        [
+          7e-05,
+          -4e-05,
+          -1.0
+        ]
+      ],
+      "gripper_width_m": 0.0703,
+      "score": 0.8892,
+      "object_id": 1,
+      "score_terms": {
+        "antipodal": 0.993,
+        "centering": 0.966,
+        "width_fit": 0.392,
+        "clearance": 1.0,
+        "normal_agree": 0.939
+      }
+    }
+  ]
+}

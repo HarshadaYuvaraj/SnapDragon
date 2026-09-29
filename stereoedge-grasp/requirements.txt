@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+opencv-python>=4.9
+matplotlib>=3.8
+pillow>=10.0
+onnx>=1.16
+onnxruntime>=1.18

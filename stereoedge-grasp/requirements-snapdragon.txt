@@ -1,0 +1,8 @@
+# Snapdragon X (Windows on ARM64), native ARM64 Python 3.11-3.13
+numpy>=1.26
+scipy>=1.11
+opencv-python>=4.9
+matplotlib>=3.8
+pillow>=10.0
+onnx>=1.16
+onnxruntime-qnn        # ONNX Runtime with the QNN Execution Provider (Hexagon NPU / HTP)
